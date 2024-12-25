@@ -3,7 +3,7 @@ import CONSTANTS from "../constants/constants.mjs";
 /**
  *
  * @param {string} envName
- * @returns
+ * @returns ENV constant
  */
 export function getENVConstants(envName) {
   for (let prop in CONSTANTS.ENV) {
@@ -17,7 +17,7 @@ export function getENVConstants(envName) {
 /**
  *
  * @param {string} contentType
- * @returns
+ * @returns File extension
  */
 export function getFileExtension(contentType) {
   switch (contentType) {
