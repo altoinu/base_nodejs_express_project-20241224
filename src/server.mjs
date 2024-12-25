@@ -22,7 +22,7 @@ const __dirname = dirname(__filename);
 /**
  * Normalize a port into a number, string, or false.
  * @param {*} val
- * @returns
+ * @returns Normalized port
  */
 function normalizePort(val) {
   var port = parseInt(val, 10);
