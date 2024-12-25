@@ -7,7 +7,7 @@ const eslintConfig = [
   {
     files: ["**/*.{js,cjs,mjs}"],
     ignores: ["node_modules", "build", "*.css"],
-    languageOptions: { globals: globals.browser },
+    languageOptions: { globals: globals.node },
   },
   pluginJs.configs.recommended,
   eslintConfigPrettier,
