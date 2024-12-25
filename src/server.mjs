@@ -38,8 +38,6 @@ function normalizePort(val) {
   return false;
 }
 
-console.log("ENV.corsAllowOrigin", ENV.corsAllowOrigin);
-console.log(Array.isArray(ENV.corsAllowOrigin));
 const port = normalizePort(ENV.port);
 const cors = CORS({
   origin: ENV.corsAllowOrigin,
