@@ -1,7 +1,7 @@
 {
   "name": "base_nodejs_express_project-20241224",
   "version": "1.0.0",
-  "description": "Sample basic Node.js server project setup with Express and some dev dependencies ",
+  "description": "Sample basic Node.js server project setup with Express and some dev dependencies",
   "private": true,
   "main": "src/index.mjs",
   "scripts": {

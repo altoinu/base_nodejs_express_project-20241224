@@ -1,6 +1,6 @@
 # base_nodejs_express_project-20241224
 
-Sample basic Node.js project setup with some dev dependencies
+Sample basic Node.js server project setup with Express and some dev dependencies
 
 ## Writing README stuff
 
