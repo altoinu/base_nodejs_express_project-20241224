@@ -6,7 +6,7 @@
 import CONSTANTS from "./constants.mjs";
 
 const DEFAULT_VALUES = {
-  env: CONSTANTS.ENV.DEV.name,
+  env: CONSTANTS.ENV.dev.name,
 };
 
 export default DEFAULT_VALUES;

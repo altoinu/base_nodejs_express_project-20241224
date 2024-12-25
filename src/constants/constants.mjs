@@ -1,16 +1,16 @@
 const CONSTANTS = {
   ENV: {
-    DEV: {
+    dev: {
       name: "development",
       shortname: "dev",
       longname: "Development",
     },
-    QA: {
+    qa: {
       name: "qa",
       shortname: "qa",
       longname: "QA",
     },
-    PROD: {
+    prod: {
       name: "production",
       shortname: "prod",
       longname: "Production",
