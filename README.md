@@ -9,6 +9,7 @@ Sample basic Node.js server project setup with Express and some dev dependencies
 ## Node stuff
 
 - Node.js (v23.5.0) and npm [https://nodejs.org/](https://nodejs.org/)
+- PM2 (v5.4.3) [http://pm2.keymetrics.io](http://pm2.keymetrics.io)
 
 ## Initial set up
 
