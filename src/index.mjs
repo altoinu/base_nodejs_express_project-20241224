@@ -1,6 +1,19 @@
 "use strict";
 
-import blah, { fancyText } from "./someModule/blah.mjs";
+import server from "./server.mjs";
 
-console.log(fancyText);
-console.log(blah.text);
+const serverObj = server();
+serverObj.start();
+
+async function doPM2Shutdown() {
+  await serverObj.shutdown();
+  process.exit(0);
+}
+
+process.on("message", (message) => {
+  if (message === "shutdown") doPM2Shutdown();
+});
+
+process.on("SIGINT", () => {
+  doPM2Shutdown();
+});
