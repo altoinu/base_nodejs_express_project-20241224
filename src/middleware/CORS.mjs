@@ -82,8 +82,7 @@ function allow(corsDef, req, res, next) {
 /**
  * @param {Object} corsDef - CORS definition.
  * @param {string[]} [corsDef.origin] - CORS allowed origin domain.
- *
- * @returns {Object} Object {allow - expressjs middleware}
+ * @returns {{allow:(req:Request, res:Response, next:Function) => void}} Object {allow - expressjs middleware}
  */
 function CORS(corsDef) {
   return {
