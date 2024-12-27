@@ -279,7 +279,7 @@ function createServer(config) {
   // Return error as json if .json is in URL
   // Disabling ESLint rule here since Express error handler requires four args
   // eslint-disable-next-line no-unused-vars
-  app.use(/\/\*.json/, (err, req, res, next) => {
+  app.use(/.+\.json\??.*/, (err, req, res, next) => {
     let errorObj = createErrorReturnObj(err);
     if (isDevEnv()) errorObj.error = errorObj.error.stack;
 
