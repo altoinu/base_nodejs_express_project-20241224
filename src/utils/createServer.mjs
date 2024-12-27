@@ -106,7 +106,7 @@ import ENV from "../env.mjs";
 import express from "express";
 import morgan from "morgan";
 
-const VERSION = "2.0.0";
+export const VERSION = "2.0.0";
 
 /**
  * Setup Express server based on specified config.
@@ -338,7 +338,5 @@ function createServer(config) {
     },
   };
 }
-
-createServer.version = VERSION;
 
 export default createServer;
