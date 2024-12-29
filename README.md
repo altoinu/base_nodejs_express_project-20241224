@@ -17,6 +17,17 @@ Sample basic Node.js server project setup with Express and some dev dependencies
 npm install
 ```
 
+### Environment variables
+
+Set following values via <code>.env</code>
+
+```
+# Array of origins to allow in CORS, JSON format
+CORS_ALLOW_ORIGIN=["http://localhost", "http://localhost:3000"]
+# Port number to listen to.
+PORT=3000
+```
+
 ## To run
 
 ```
@@ -39,7 +50,7 @@ CORS_ALLOW_ORIGIN=["http://localhost", "http://localhost:3000"]
 PORT=3000
 ```
 
-## To start/restart:
+## To start/restart with PM2:
 
 ```
 pm2 start [ecosystem config file].js
