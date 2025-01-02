@@ -17,15 +17,15 @@ Sample basic Node.js server project setup with Express and some dev dependencies
 npm install
 ```
 
-### Environment variables
+### Optional Environment variables
 
 Set following values via <code>.env</code>
 
 ```
 # Array of origins to allow in CORS, JSON format
 CORS_ALLOW_ORIGIN=["http://localhost", "http://localhost:3000"]
-# Port number to listen to.
-PORT=3000
+# Port number to listen to. Default 3000
+PORT=4000
 ```
 
 ## To run
@@ -38,17 +38,6 @@ node src/index.mjs
 
 - [http://localhost:3000/getip.json](http://localhost:3000/getip.json)
 - [http://localhost:3000/config.json](http://localhost:3000/config.json)
-
-## Optional environment variables
-
-Set following values via <code>.env</code>
-
-```
-# Array of origins to allow in CORS, JSON format
-CORS_ALLOW_ORIGIN=["http://localhost", "http://localhost:3000"]
-# Port number to listen to. Default 3000
-PORT=3000
-```
 
 ## To start/restart with PM2:
 
