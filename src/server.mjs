@@ -67,6 +67,10 @@ function createAndStartServer() {
       {
         middleware: configRoute,
       },
+      {
+        baseUrl: "/foobar",
+        middleware: configRoute,
+      },
     ],
   });
 }
