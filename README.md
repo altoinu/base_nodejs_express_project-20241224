@@ -28,10 +28,10 @@ CORS_ALLOW_ORIGIN=["http://localhost", "http://localhost:3000"]
 PORT=4000
 ```
 
-## To run
+## To run (for development)
 
 ```
-node src/index.mjs
+npm run dev
 ```
 
 ...then try accessing one of defined routes:
