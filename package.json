@@ -1,10 +1,11 @@
 {
   "name": "base_nodejs_express_project-20241224",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sample basic Node.js server project setup with Express and some dev dependencies",
   "private": true,
   "main": "src/index.mjs",
   "scripts": {
+    "dev": "node src/index.mjs",
     "eslint": "eslint src",
     "prettier": "prettier --write \"**/*.{md,css,js,cjs,mjs}\"",
     "lint:fix": "npm-run-all prettier eslint",
@@ -13,7 +14,7 @@
     "prepare": "husky install",
     "build:doc": "npm-run-all -p build:doc:*",
     "build:doc:apidoc": "apidoc -c apidoc.json -f \".*\\.js$\" -f \".*\\.mjs$\" -i src/ -o docs/apidoc",
-    "build:doc:jsdoc": "jsdoc src -P package.json -R README.md -c jsdoc.config.js -r -d docs/jsdoc"
+    "build:doc:jsdoc": "jsdoc -P package.json -R README.md -c jsdoc.config.js -r -d docs/jsdoc"
   },
   "repository": {
     "type": "git",
