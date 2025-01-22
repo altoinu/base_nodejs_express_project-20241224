@@ -130,3 +130,4 @@ npm run build:doc:jsdoc
     - [param](https://jsdoc.app/tags-param.html)
     - [Function](https://jsdoc.app/tags-function.html)
     - [Class](https://jsdoc.app/tags-class.html)
+  - [typedef](https://jsdoc.app/tags-typedef)
