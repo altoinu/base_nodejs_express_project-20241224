@@ -1,0 +1,17 @@
+#!/bin/sh
+#GIT_WORK_TREE=/home/devadmin/repo.git git checkout -f review
+#git --git-dir=/home/devadmin/repo.git/.git pull
+
+# Update local project dir
+unset GIT_DIR
+cd ~/source
+git reset --hard HEAD
+git pull
+
+# Make sure node modules are up to date
+cd ~/source
+npm ci
+
+# graceful restart
+cd ~/source
+pm2 startOrGracefulReload pm2_prod.ecosystem.config.js -m
