@@ -95,6 +95,8 @@ function server() {
           console.log("address:" + address);
           console.log("listening at port:" + port);
         });
+      } else {
+        throw new Error("Server has already been started...");
       }
 
       return appObj;
@@ -119,6 +121,8 @@ function server() {
         appObj = null;
         shutdown = null;
         server = null;
+      } else {
+        throw new Error("Server is not running...");
       }
 
       return Promise.allSettled(shutdownPromises);
